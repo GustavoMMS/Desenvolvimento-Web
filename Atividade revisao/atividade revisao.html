@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Atividade Sorteio</title>
+
+</head>
+<body>
+	<p id="p">
+		<table>
+			<tr>
+				<td>
+					<img src="frente.jpg">
+				</td>
+				<td>
+					<img src="frente.jpg">
+				</td>
+				<td>
+					<img src="frente.jpg">
+				</td>
+				<td>
+					<img src="frente.jpg">
+				</td>
+				<td>
+					<img src="frente.jpg">
+				</td>
+				<td>
+					<img src="frente.jpg">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="frente.jpg">
+				</td>
+				<td>
+					<img src="frente.jpg">
+				</td>
+				<td>
+					<img src="frente.jpg">
+				</td>
+				<td>
+					<img src="frente.jpg">
+				</td>
+				<td>
+					<img src="frente.jpg">
+				</td>
+				<td>
+					<img src="frente.jpg">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="frente.jpg">
+				</td>
+				<td>
+					<img src="frente.jpg">
+				</td>
+				<td>
+					<img src="frente.jpg">
+				</td>
+				<td>
+					<img src="frente.jpg">
+				</td>
+				<td>
+					<img src="frente.jpg">
+				</td>
+				<td>
+					<img src="frente.jpg">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="frente.jpg">
+				</td>
+				<td>
+					<img src="frente.jpg">
+				</td>
+				<td>
+					<img src="frente.jpg">
+				</td>
+				<td>
+					<img src="frente.jpg">
+				</td>
+				<td>
+					<img src="frente.jpg">
+				</td>
+				<td>
+					<img src="frente.jpg">
+				</td>
+			</tr>
+		</table>
+	</p>
+	<script type="text/javascript">
+		var sorteio = [];
+		function numerosAleatorios(){
+			while(sorteio.length < 24){
+				var aleatorio = Math.floor(Math.random() * 23);
+				if(sorteio.indexOf(aleatorio) == -1){
+					sorteio.push(aleatorio);
+				}
+
+			}
+		}
+		numerosAleatorios();
+		document.getElementById("p").innerHTML = sorteio.toString();
+	</script>
+</body>
+</html>
